@@ -1,14 +1,18 @@
 ﻿using BepInEx;
 
-namespace LethalCompanyTemplate
+namespace AbelMuak.ExpressYourself
 {
-    [BepInPlugin(PluginInfo.PLUGIN_GUID, PluginInfo.PLUGIN_NAME, PluginInfo.PLUGIN_VERSION)]
-    public class Plugin : BaseUnityPlugin
+    [BepInPlugin(ey_guid, ey_name, ey_version)]
+    public class ExpressYourself : BaseUnityPlugin
     {
+        public const string ey_guid = "abelmuak.expressyourself";
+        public const string ey_name = "abelmuak.expressyourself";
+        public const string ey_version = "abelmuak.expressyourself";
+
         private void Awake()
         {
             // Plugin startup logic
-            Logger.LogInfo($"Plugin {PluginInfo.PLUGIN_GUID} is loaded!");
+            Logger.LogInfo($"Plugin {ey_guid} is loaded!");
         }
     }
 }
